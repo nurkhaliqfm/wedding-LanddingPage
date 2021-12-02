@@ -65,6 +65,25 @@ $(document).ready(function() {
         }
     })
 
+    /*----------- Testimoni Carousel ------------*/
+    $('.testimoni-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        autoplay:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:4,
+            }
+        }
+    })
+
 
     $('.owl-carousel').owlCarousel({
         dots:false,

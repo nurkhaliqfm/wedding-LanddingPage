@@ -464,6 +464,29 @@ ul{
 }
 /* Product Section End */
 
+/* Testimoni Section Start*/
+
+.testimoni {
+    min-height: 110vh;
+    padding: 150px 0;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+  
+.testimoni-item img {
+    max-width: 230px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: var(--shadow-black-300);
+    border-radius: 30px;
+}
+
+/* Testimoni Section End*/
+
+
 /* Kontak Section Start */
 .kontak {
     min-height: 110vh;
