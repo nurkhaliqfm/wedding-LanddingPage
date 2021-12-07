@@ -76,6 +76,21 @@ ul{
     background-color: var(--main-color);
 }
 
+@keyframes pulse_02 {
+    0% {
+      transform: scale(0.94);
+      box-shadow: 0 0 0 0 var(--main-color);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+    100% {
+      transform: scale(0.94);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
 /* Navbar Section Start */
 .navbar{
     background-color: transparent;
@@ -142,8 +157,8 @@ ul{
 
 /* Home Section Start*/
 .home{
-    min-height: 110vh;
-    padding: 150px 0;
+    /* min-height: 110vh; */
+    padding: 150px 0 90px 0;
     background-color: var(--color-1);
     position: relative;
     z-index: 1;
@@ -207,32 +222,33 @@ ul{
 
 .home-img-parent {
     position: relative;
-    top: 0;
-    left: 0;
+    bottom: 70px;
   }
+
 .back-home-image {
     position: relative;
-    top: 15px;
-    right: 90px;
-    width: 80%;
+    top: 60px;
+    right: 75px;
+    width: 65%;
 }
 .front-home-image {
     position: absolute;
-    top: 95px;
-    left: 90px;
-    width: 80%;
+    top: 160px;
+    left: 155px;
+    width: 65%;
 }
 .gradient-circle {
     position: absolute;
-    top: 140px;
-    right:10px;
+    right:100px;
+    bottom: 100px;
+    width: 100%;
 }
 /* Home Section End */
 
 /* Tentang Section Start*/
 .tentang{
-    min-height: 110vh;
-    padding: 150px 0;
+    /* min-height: 110vh; */
+    padding: 90px 0;
     background-color: white;
     position: relative;
     z-index: 1;
@@ -275,21 +291,21 @@ ul{
 
 .tentang-img-parent {
     position: relative;
-    top: 0;
+    top: -80px;
     left: 0;
   }
 
 .back-tentang-image {
     position: relative;
-    top: 15px;
-    right: 90px;
-    width: 80%;
+    top: 40px;
+    right: 70px;
+    width: 65%;
 }
 .front-tentang-image {
     position: absolute;
-    top: 95px;
-    left: 90px;
-    width: 80%;
+    top: 135px;
+    left: 165px;
+    width: 65%;
 }
 .gradient-circle {
     position: absolute;
@@ -300,8 +316,8 @@ ul{
 
 /* Product Section Start */
 .product{
-    min-height: 110vh;
-    padding: 150px 0;
+    /* min-height: 110vh; */
+    padding: 80px 0;
     background-color: var(--color-1);
     position: relative;
     z-index: 1;
@@ -464,16 +480,152 @@ ul{
 }
 /* Product Section End */
 
+/* Pesan Section Start */
+.pesan{
+    /* min-height: 110vh; */
+    padding: 90px 0;
+    background-color: var(--color-1);
+    position: relative;
+    z-index: 1;
+}
+
+.pesan-text h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: black;
+    margin: 0 0 20px;
+    font-family: 'Bellefair', serif;
+}
+
+.pesan-text h1 span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: var(--main-color);
+    margin: 0 0 20px;
+    font-family: 'Bellefair', serif;
+}
+
+.pesan-img img {
+    align-content: center;
+    max-width: 350px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 20px;
+    animation: bounceTop_01 3s ease infinite;
+  }
+  
+.pesan-btn {
+    text-align: justify;
+    margin-top: 60px;
+}
+
+.pesan-text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.pesan-text p span {
+    color: var(--black-900);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.pesan-btn img {
+    width: 45px;
+}
+
+.btn-4 {
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 500;
+    animation: pulse_02 2s ease infinite;
+}
+
+.btn-4:focus {
+    box-shadow: var(--shadow-black-300);
+}
+
+.btn-4:hover {
+    counter-reset: var(--main-color);
+    background-color: #ffffff;
+}
+
+.btn-4-new {
+    background-color: #fa440c;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 500;
+    background-color: #ffffff;
+    animation: pulse_022 2s ease infinite;
+}
+
+.btn-4-new:focus {
+    box-shadow: var(--shadow-black-300);    
+}
+
+.btn-4-new:hover {
+    counter-reset: var(--main-color);
+}
+/* Pesan Section End */
+
 /* Testimoni Section Start*/
 
 .testimoni {
-    min-height: 110vh;
-    padding: 150px 0;
+    /* min-height: 110vh; */
+    padding: 80px 0;
     background-color: white;
     position: relative;
     z-index: 1;
 }
   
+.testimoni-text h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: black;
+    margin: 0 0 20px;
+    font-family: 'Bellefair', serif;
+}
+
+.testimoni-text h1 span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: var(--main-color);
+    margin: 0 0 20px;
+    font-family: 'Bellefair', serif;
+}
+
 .testimoni-item img {
     max-width: 230px;
     display: block;
@@ -489,8 +641,8 @@ ul{
 
 /* Kontak Section Start */
 .kontak {
-    min-height: 110vh;
-    padding: 150px 0;
+    /* min-height: 110vh; */
+    padding: 80px 0;
     background-color: white;
     position: relative;
     z-index: 1;
@@ -498,6 +650,7 @@ ul{
   
 .kontak .section-maps {
     padding: 20px;
+    width: 640px;
     box-shadow: var(--shadow-black-100);
     border-radius: 10px;
     margin-bottom: 30px;
@@ -744,6 +897,40 @@ ul{
     border-radius: 10px;
 }
 
+.popup-body .item img{
+    max-width: 120px;
+    margin: 10px
+}
+
+.ask-btn {
+    text-align: justify;
+}
+
+.btn-x {
+    background-color: var(--color-1);
+    padding: 6px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    color: var(--main-color);
+    font-size: 15px;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 500;
+    animation: pulse_02 2s ease infinite;
+}
+
+
+.btn-x:focus {
+    box-shadow: var(--shadow-black-300);
+}
+
+.btn-x:hover {
+    counter-reset: var(--main-color);
+    background-color: #ffffff;
+}
+
 #overlay {
     position: fixed;
     z-index: 3;
@@ -795,5 +982,518 @@ ul{
         background-color: var(--color-1);
     }
 
+    /* Home Start */
+    .home-text h1{
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .home-text h1 span{
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .home-text p{
+        font-size: 15px;
+        color: black;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+
+    .home-img-parent {
+        position: relative;
+        bottom: 140px;
+      }
+
+    .back-home-image {
+        top: 85px;
+        right: 45px;
+    }
+    .front-home-image {
+        top: 146px;
+        left: 98px;
+    }
     
+    /* Home End */
+
+    /* Tentang Start */
+    .tentang-text{
+        margin-left: 70px;
+    }
+
+    .tentang-text p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .back-tentang-image {
+        position: relative;
+        top: 80px;
+        right: 45px;
+    }
+    .front-tentang-image {
+        position: absolute;
+        top: 145px;
+        left: 95px;
+    }
+    /* Tentang End */
+
+    /* Produk Start */
+    .product-item .img-1{
+        max-width: 170px;
+        top: 80px;
+        right: 10px;
+    }
+    
+    .product-item .bg-product-1{
+        width: 170px;
+        height: 245.56px;
+        top: 120px;
+        left: 0;
+    }
+    
+    .product-item .img-2{
+        max-width: 195px;
+        top: 185px;
+        right: 5px;
+    }
+    
+    .product-item .bg-product-2{
+        width: 170px;
+        height: 245.56px;
+        top: 215px;
+    }
+    
+    .product-item .img-3{
+        max-width: 195px;
+        right: 50px;
+        top: 0;
+    }
+    
+    .product-item .bg-product-3{
+        width: 170px;
+        height: 245.56px;
+        top: 70px;
+        left: 37px;
+    }
+    
+    .product-item .img-4{
+        max-width: 185px;
+        top: 160px;
+        right: -10px;
+    }
+    
+    .product-item .bg-product-4{
+        width: 170px;
+        height: 245.56px;
+        top: 215px;
+        left: 0;
+    }
+    
+    .product-item .img-5{
+        max-width: 185px;
+        top: 25px;
+        right: -5px;
+    }
+    
+    .product-item .bg-product-5{
+        width: 170px;
+        height: 245.56px;
+        top: 90px;
+        left: 0;
+    }
+    
+    .product-item .img-6{
+        max-width: 195px;
+        right: 35px;
+        top: 135px;
+    }
+    
+    .product-item .bg-product-6{
+        width: 170px;
+        height: 245.56px;
+        top: 210px;
+        left: 40px;
+    }
+    /* Produk End */
+    
+    /* Testimoni Start */
+    .testimoni-item{
+        padding: 0 10px 0 10px;
+    }
+    /* Testimoni End */
+
+}
+
+@media(max-width:767px){
+
+    /* Home Start */
+    .home-img-parent {
+        bottom: 40px;
+      }
+    
+    .back-home-image {
+        width: 60%;
+        top: 50px;
+        right: 55px;
+    }
+    .front-home-image {
+        width: 60%;
+        top: 150px;
+        left: 220px;
+    }
+
+    .gradient-circle {
+        width: 90%;
+    }
+    /* Home End */
+
+    /* Tentang Start */
+    .tentang-text{
+        margin-left: 0px;
+    }
+
+    .tentang-text h1{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .tentang-text p{
+        text-align: justify;
+    }
+
+    .tentang-img-parent {
+        top: -80px;
+        left: 0;
+      }
+    
+    .back-tentang-image {
+        top: 45px;
+        right: 50px;
+        width: 60%;
+    }
+    .front-tentang-image {
+        top: 145px;
+        left: 220px;
+        width: 60%;
+    }
+    .gradient-circle {
+        top: 140px;
+        right:10px;
+        width: 90%;
+    }
+    /* Tentang End */
+
+    /* Produk Start */
+    .product-item .img-1{
+        top: 80px;
+        right: 40px;
+    }
+    
+    .product-item .img-2{
+        top: 185px;
+        right: 35px;
+    }
+    
+    .product-item .img-3{
+        right: 78px;
+        top: 0;
+    }
+    
+    .product-item .img-4{
+        top: 160px;
+        right: 20px;
+    }
+    
+    
+    .product-item .img-5{
+        top: 25px;
+        right: 25px;
+    }
+    
+    .product-item .img-6{
+        right: 65px;
+        top: 135px;
+    }
+    
+    /* Produk End */
+
+    /* Kontak Start */
+    .kontak .section-maps {
+        width: 550px;
+        height: 550px;
+      }
+    
+      .kontak .section-maps iframe {
+        width: 100%;
+        height: 100%;
+      }
+    /* Kontak End */
+
+    /* Pop Up Start */
+    .popup-body .item img{
+        padding-right: 20px;
+    }
+    /* Pop Up End */
+
+    /* Footer Start */
+    .instagram-btn{
+        display: none;
+    }
+
+    .whatsapp-btn{
+        display: none;
+    }
+
+    .facebook-btn{
+        display: none;
+    }
+
+    .instagram-btn-new{
+        display: inline;
+    }
+
+    .whatsapp-btn-new{
+        display: inline;
+    }
+
+    .facebook-btn-new{
+        display: inline;
+    }
+    /* Footer End */
+    
+}
+
+@media (max-width: 575px){
+    /* Home Start */
+    .home-text{
+        padding: 0 20px 0 20px;
+    }
+
+    .home-text h1{
+        font-size: 35px;
+        line-height: 20px;
+    }
+
+    .home-text h1 span{
+        font-size: 35px;
+        line-height: 20px;
+    }
+
+    .home-text p{
+        font-size: 14px;
+    }
+
+    .home-btn{
+        margin-left: 20px;
+        margin-top: 40px;
+        border: none;
+    }
+    
+    .home-btn span{
+        font-size: 16px;
+    }
+    
+    .home-btn img {
+        width: 170px;
+        height: 39.79px;
+        right: 50px;
+        top: -3px;
+    }
+
+    .home-img-parent {
+        bottom: 60px;
+      }
+    
+    .back-home-image {
+        width: 52%;
+        top: 80px;
+        right: 55px;
+    }
+    .front-home-image {
+        width: 52%;
+        top: 150px;
+        left: 145px;
+    }
+
+    .gradient-circle {
+        right: 45px;
+        width: 80%;
+    }
+    /* Home End */
+
+    /* Tentang Start */
+    .tentang-text{
+        padding: 0 20px 0 20px;
+    }
+
+    .tentang-text h1{
+        font-size: 30px;
+    }
+
+    .tentang-text h1 span{
+        font-size: 30px;
+    }
+
+    .tentang-text p{
+        font-size: 14px;
+    }
+
+    .tentang-img-parent {
+        top: -80px;
+        left: 0;
+      }
+    
+    .back-tentang-image {
+        top: 80px;
+        right: 55px;
+        width: 52%;
+    }
+    .front-tentang-image {
+        top: 150px;
+        left: 145px;
+        width: 52%;
+    }
+    .gradient-circle {
+        right: 45px;
+        width: 80%;
+    }
+    /* Tentang End */
+
+    /* Produk Start */
+    .product-text h1{
+        font-size: 30px;
+    }
+    
+    .product-text h1 span{
+        font-size: 30px;
+    }
+
+    .product-item {
+        height: 400px;
+        margin: 0px;
+    }
+
+    .product-item .img-1{
+        top: 50px;
+        right: 20%;
+    }
+    
+    .product-item .bg-product-1{
+        top: 90px;
+        left: 30%;
+    }
+    
+    .product-item .img-2{
+        top: 50px;
+        right: 20%;
+    }
+    
+    .product-item .bg-product-2{
+        left: 25%;
+        top: 90px;
+    }
+    
+    .product-item .img-3{
+        right: 38%;
+        top: 50px;
+    }
+    
+    .product-item .bg-product-3{
+        top: 90px;
+        left: 32%;
+    }
+    
+    .product-item .img-4{
+        top: 50px;
+        right: 25%;
+    }
+    
+    .product-item .bg-product-4{
+        top: 90px;
+        left: 20%;
+    }
+    
+    .product-item .img-5{
+        top: 50px;
+        right: 25%;
+    }
+    
+    .product-item .bg-product-5{
+        top: 90px;
+        left: 20%;
+    }
+    
+    .product-item .img-6{
+        right: 40%;
+        top: 50px;
+    }
+    
+    .product-item .bg-product-6{
+        top: 90px;
+        left: 28%;
+    }
+
+    .product-btn{
+        margin-top: 0px;
+        margin-left: 25%;
+    }
+
+    .product-btn span{
+        font-size: 16px;
+    }
+    
+    .product-btn img {
+        width: 170px;
+        height: 39.79px;
+    }
+    /* Produk End */
+
+    /* Testimoni Start */
+    .testimoni-text h1{
+        font-size: 30px;
+        line-height: 10px;
+    }
+    
+    .testimoni-text h1 span{
+        font-size: 30px;
+    }
+    /* Testimoni End */
+
+    /* Pesan Start */
+    .pesan-text h1{
+        font-size: 30px;
+        line-height: 20px;
+    }
+    
+    .pesan-text h1 span{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .btn-4 {
+        font-size: 25px;
+    }
+    /* Pesan End */
+
+    /* Kontak Start */
+    .kontak .section-maps {
+        text-align: center;
+        width: 400px;
+        height: 400px;
+      }
+    
+    .kontak .section-maps iframe {
+        width: 100%;
+        height: 100%;
+    }
+    /* Kontak End */
+
+    /* Pop Up Start */
+    .popup-body .item img{
+        width: 90%;
+        padding-right: 5px;
+        
+    }
+    /* Pop Up End */
 }
