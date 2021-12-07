@@ -91,6 +91,41 @@ ul{
     }
   }
 
+@keyframes zoomInOut_01 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Preloader Start */
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2100;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .preloader img {
+    animation: zoomInOut_01 1s ease infinite;
+  }
+
+  .brand-img img {
+    max-width: 60px;
+    width: 100%;
+  }
+/* Preloader End */
+
 /* Navbar Section Start */
 .navbar{
     background-color: transparent;
