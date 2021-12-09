@@ -232,8 +232,10 @@ ul{
 }
 
 .home-btn{
+    position: relative;
     margin-top: 40px;
     border: none;
+    z-index: 5;
 }
 
 .home-btn span{
@@ -902,7 +904,7 @@ ul{
 }
 
 .popup-header .title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -1306,12 +1308,12 @@ ul{
     }
 
     .home-text h1{
-        font-size: 35px;
+        font-size: 33px;
         line-height: 20px;
     }
 
     .home-text h1 span{
-        font-size: 35px;
+        font-size: 33px;
         line-height: 20px;
     }
 
@@ -1343,12 +1345,12 @@ ul{
     .back-home-image {
         width: 52%;
         top: 80px;
-        right: 55px;
+        right: 45px;
     }
     .front-home-image {
         width: 52%;
-        top: 150px;
-        left: 145px;
+        top: 140px;
+        left: 125px;
     }
 
     .gradient-circle {
@@ -1381,12 +1383,12 @@ ul{
     
     .back-tentang-image {
         top: 80px;
-        right: 55px;
+        right: 45px;
         width: 52%;
     }
     .front-tentang-image {
-        top: 150px;
-        left: 145px;
+        top: 140px;
+        left: 125px;
         width: 52%;
     }
     .gradient-circle {
@@ -1411,62 +1413,62 @@ ul{
 
     .product-item .img-1{
         top: 50px;
-        right: 20%;
+        right: 15%;
     }
     
     .product-item .bg-product-1{
         top: 90px;
-        left: 30%;
+        left: 20%;
     }
     
     .product-item .img-2{
         top: 50px;
-        right: 20%;
+        right: 12%;
     }
     
     .product-item .bg-product-2{
-        left: 25%;
-        top: 90px;
+        left: 20%;
+        top: 100px;
     }
     
     .product-item .img-3{
-        right: 38%;
-        top: 50px;
+        right: 20%;
+        top: 40px;
     }
     
     .product-item .bg-product-3{
-        top: 90px;
-        left: 32%;
+        top: 125px;
+        left: 35%;
     }
     
     .product-item .img-4{
-        top: 50px;
-        right: 25%;
+        top: 35px;
+        right: 13%;
     }
     
     .product-item .bg-product-4{
-        top: 90px;
+        top: 110px;
         left: 20%;
     }
     
     .product-item .img-5{
-        top: 50px;
-        right: 25%;
+        top: 35px;
+        right: 13%;
     }
     
     .product-item .bg-product-5{
-        top: 90px;
+        top: 120px;
         left: 20%;
     }
     
     .product-item .img-6{
-        right: 40%;
-        top: 50px;
+        right: 23%;
+        top: 35px;
     }
     
     .product-item .bg-product-6{
-        top: 90px;
-        left: 28%;
+        top: 120px;
+        left: 33%;
     }
 
     .product-btn{
@@ -1507,11 +1509,20 @@ ul{
     }
 
     .btn-4 {
-        font-size: 25px;
+        font-size: 20px;
     }
     /* Pesan End */
 
     /* Kontak Start */
+    .kontak-text h1{
+        font-size: 30px;
+        line-height: 10px;
+    }
+    
+    .kontak-text h1 span{
+        font-size: 30px;
+    }
+
     .kontak .section-maps {
         text-align: center;
         width: 400px;
@@ -1525,10 +1536,21 @@ ul{
     /* Kontak End */
 
     /* Pop Up Start */
+    .popup-header .title {
+        font-size: 12px;
+    }
+
     .popup-body .item img{
         width: 90%;
         padding-right: 5px;
-        
+    }
+
+    .popup-header .text-call {
+        font-size: 12px;
+    }
+
+    .btn-x{
+        font-size: 12px;
     }
     /* Pop Up End */
 }
